@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stronger | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="mostrarTermosHome()">
+
+    <header>
+        <a class="logo" href="stronger.html">STRONGER</a>
+        <nav>
+            <a href="stronger.html" class="ativo">Home</a>
+            <span id="menu_sistema">
+                <a href="treino.html">Treino de Hoje</a>
+                <a href="calculos.html">Cálculos</a>
+                <a href="ajustes.html">Ajustar peso</a>
+                <a href="termos.html" id="menu_termos" style="display: none;">Termos</a>
+            </span>
+        </nav>
+        <div class="conta">
+            <span id="menu_visitante">
+                <a href="cadastro.html" class="botao">Cadastrar</a>
+                <a href="login.html" class="botao">Login</a>
+            </span>
+            <span id="menu_usuario">
+                <span id="exibir_nome"></span>
+                <button onclick="sair()">Sair</button>
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Fique mais forte, <span>ciclo após ciclo</span></h1>
+            <p>O Stronger organiza o seu treino de powerlifting e calcula as cargas de cada série para você.
+                É só informar o seu 1RM e seguir o treino do dia.</p>
+            <div id="cta">
+                <a href="cadastro.html" class="botao grande-botao">Começar agora</a>
+                <a href="login.html" class="botao grande-botao">Já tenho conta</a>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Treino de Hoje</h3>
+                <p>Mostra o levantamento do dia ou o descanso, com aquecimento, séries de trabalho e a carga em kg ou lb.</p>
+            </div>
+            <div class="card">
+                <h3>Método 5/3/1</h3>
+                <p>Ciclos de 4 semanas (3x5, 3x3, 3x5/3/1 e 5x5) com treinos de assistência Big and dumb ou Big Muscle.</p>
+            </div>
+            <div class="card">
+                <h3>Calculadora de 1RM</h3>
+                <p>Estima o seu 1RM pela fórmula de Epley e mostra a relação entre a sua força e o seu peso corporal.</p>
+            </div>
+            <div class="card">
+                <h3>Progressão de carga</h3>
+                <p>Ao fim de cada ciclo, +2,5 kg nos levantamentos superiores e +5 kg nos inferiores.</p>
+            </div>
+            <div class="card card-termos">
+                <h3>Termos de academia</h3>
+                <div id="exibir_termos_home"></div>
+            </div>
+        </section>
+
+        <section class="passos">
+            <h2>Como funciona</h2>
+            <p><b>1.</b> Faça o seu cadastro com o perfil esportivo e o 1RM dos 4 levantamentos.</p>
+            <p><b>2.</b> Entre com o seu login e abra o Treino de Hoje.</p>
+            <p><b>3.</b> Termine o ciclo e deixe o site aumentar as suas cargas.</p>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

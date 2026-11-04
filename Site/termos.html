@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stronger | Termos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="iniciarTermos()">
+
+    <header>
+        <a class="logo" href="stronger.html">STRONGER</a>
+        <nav>
+            <a href="stronger.html">Home</a>
+            <span id="menu_sistema">
+                <a href="treino.html">Treino de Hoje</a>
+                <a href="calculos.html">Cálculos</a>
+                <a href="ajustes.html">Ajustar peso</a>
+                <a href="termos.html" id="menu_termos" class="ativo" style="display: none;">Termos</a>
+            </span>
+        </nav>
+        <div class="conta">
+            <span id="menu_visitante">
+                <a href="cadastro.html" class="botao">Cadastrar</a>
+                <a href="login.html" class="botao">Login</a>
+            </span>
+            <span id="menu_usuario">
+                <span id="exibir_nome"></span>
+                <button onclick="sair()">Sair</button>
+            </span>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <div class="caixa grande">
+            <h2>Termos de academia</h2>
+            <span id="exibir_nivel"></span>
+            <div id="exibir_termos"></div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

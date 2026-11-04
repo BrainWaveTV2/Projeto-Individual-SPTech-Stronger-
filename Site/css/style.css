@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    margin: 0;
+}
+
+a {
+    color: #ff8a73;
+}
+
+/* menu superior */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background-color: #111111;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: #d9381e;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 6px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #333333;
+}
+
+nav a.ativo {
+    background-color: #d9381e;
+}
+
+#menu_sistema, #menu_usuario {
+    display: none;
+    align-items: center;
+    gap: 6px;
+}
+
+#menu_visitante {
+    display: flex;
+    gap: 8px;
+}
+
+.conta {
+    display: flex;
+    align-items: center;
+}
+
+.botao {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #d9381e;
+    border-radius: 5px;
+}
+
+.botao:hover, .botao.ativo {
+    background-color: #d9381e;
+}
+
+/* home */
+.hero {
+    text-align: center;
+    padding: 80px 20px 50px 20px;
+    background-color: #2d2d2d;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 0 0 16px 0;
+}
+
+.hero h1 span {
+    color: #d9381e;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 24px auto;
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+.grande-botao {
+    display: inline-block;
+    margin: 4px;
+    padding: 12px 24px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 40px 20px;
+}
+
+.card {
+    width: 220px;
+    background-color: #2d2d2d;
+    padding: 16px;
+    border-radius: 10px;
+    border-top: 3px solid #d9381e;
+}
+
+.card p {
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+.passos {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 50px 20px;
+}
+
+/* pagina do sistema */
+.conteudo {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    max-width: 100%;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.grande {
+    width: 600px;
+}
+
+input, select {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #d9381e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a82a15;
+}
+
+.erro {
+    color: #ff7b7b;
+}
+
+.dica {
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+.bloco {
+    background-color: #3a3a3a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+/* termos */
+.card-termos {
+    width: 100%;
+    max-width: 700px;
+}
+
+.card-termos p {
+    margin: 8px 0;
+}
+
+/* assistencia */
+.exercicio {
+    margin-bottom: 14px;
+    line-height: 1.9;
+}
+
+.exercicio input {
+    width: 80px;
+}
+
+.nota {
+    color: #bbbbbb;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.nota p {
+    margin: 4px 0;
+}
