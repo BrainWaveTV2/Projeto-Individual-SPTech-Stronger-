@@ -16,6 +16,7 @@
             <a href="stronger.html">Home</a>
             <span id="menu_sistema">
                 <a href="treino.html">Treino de Hoje</a>
+                <a href="progresso.html">Progresso</a>
                 <a href="calculos.html">Cálculos</a>
                 <a href="ajustes.html">Ajustar peso</a>
                 <a href="termos.html" id="menu_termos" style="display: none;">Termos</a>
@@ -66,6 +67,23 @@
                 <option>kg</option>
                 <option>lb</option>
             </select>
+            <!-- calculadora de 1RM -->
+            <div class="bloco calculadora">
+                <b>Calculadora de 1RM</b>
+                <span class="dica">Não sabe o seu 1RM? Escolha o levantamento, digite uma carga que você levantou e quantas repetições fez com ela (até 10 repetições dá a estimativa mais confiável). O site calcula pela fórmula de Epley: carga x (1 + repetições / 30). Depois clique em "Usar este valor" para preencher o campo do levantamento.</span>
+                <select id="ipt_calc_levantamento">
+                    <option value="agachamento">Agachamento</option>
+                    <option value="supino">Supino</option>
+                    <option value="overhead">Overhead</option>
+                    <option value="deadlift">Deadlift</option>
+                </select>
+                <input id="ipt_calc_carga" type="number" placeholder="Carga levantada">
+                <input id="ipt_calc_reps" type="number" placeholder="Repetições feitas">
+                <button onclick="calcularCadastro()">Calcular 1RM</button>
+                <div id="exibir_calc_cad"></div>
+                <button id="btn_usar_calc" onclick="usarCalculo()" style="display: none;">Usar este valor</button>
+            </div>
+
             <input id="ipt_agachamento" type="number" placeholder="1RM Agachamento">
             <input id="ipt_supino" type="number" placeholder="1RM Supino">
             <input id="ipt_overhead" type="number" placeholder="1RM Overhead">

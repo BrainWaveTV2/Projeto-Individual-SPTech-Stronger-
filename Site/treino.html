@@ -16,6 +16,7 @@
             <a href="stronger.html">Home</a>
             <span id="menu_sistema">
                 <a href="treino.html" class="ativo">Treino de Hoje</a>
+                <a href="progresso.html">Progresso</a>
                 <a href="calculos.html">Cálculos</a>
                 <a href="ajustes.html">Ajustar peso</a>
                 <a href="termos.html" id="menu_termos" style="display: none;">Termos</a>
@@ -59,6 +60,14 @@
                 <option>Big Muscle</option>
             </select>
             <div id="exibir_treino"></div>
+
+            <!-- finalizar treino -->
+            <div id="tela_finalizar" class="finalizar">
+                <label id="rotulo_amrap">Repetições feitas no AMRAP*:</label>
+                <input id="ipt_reps_amrap" type="number" placeholder="Repetições">
+                <button onclick="finalizarTreino()">Finalizar treino</button>
+                <div id="exibir_finalizar"></div>
+            </div>
         </div>
     </main>
 
