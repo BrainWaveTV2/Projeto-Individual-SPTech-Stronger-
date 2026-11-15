@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stronger | Progresso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="iniciarProgresso()">
+
+    <header>
+        <a class="logo" href="stronger.html">STRONGER</a>
+        <nav>
+            <a href="stronger.html">Home</a>
+            <span id="menu_sistema">
+                <a href="treino.html">Treino de Hoje</a>
+                <a href="progresso.html" class="ativo">Progresso</a>
+                <a href="calculos.html">Cálculos</a>
+                <a href="ajustes.html">Ajustar peso</a>
+                <a href="termos.html" id="menu_termos" style="display: none;">Termos</a>
+            </span>
+        </nav>
+        <div class="conta">
+            <span id="menu_visitante">
+                <a href="cadastro.html" class="botao">Cadastrar</a>
+                <a href="login.html" class="botao">Login</a>
+            </span>
+            <span id="menu_usuario">
+                <span id="exibir_nome"></span>
+                <button onclick="sair()">Sair</button>
+            </span>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <div class="caixa grande">
+            <h2>Progresso</h2>
+            <span class="dica">1RM estimado de cada AMRAP dos treinos, acima ou abaixo do seu recorde. Cada vez que você finaliza um treino com AMRAP, entra um ponto novo no gráfico.</span>
+
+            <div class="grafico">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div id="exibir_progresso"></div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
